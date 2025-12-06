@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # Load the joblib logistic model
-model = joblib.load("log_reg_model")
+model = joblib.load("Logistic_Model (1).sav")
 
 st.title("Ad Click Prediction App (Logistic Regression)")
 st.write("Enter the details below to predict whether the user will click on the ad.")
@@ -31,3 +31,4 @@ if st.button("Predict"):
         st.success("User is **likely to click** on the ad.")
     else:
         st.error("User is **unlikely to click** on the ad.")
+
